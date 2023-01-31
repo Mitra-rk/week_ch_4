@@ -1,5 +1,11 @@
-.App {
-  text-align: center;
-  background-color: tomato;
+.App .Container {
+  border: 1px solid rgba(176, 174, 174, 0.578);
+  margin: 60px auto;
+  max-width: 600px;
+  border-radius: 4px;
 }
 
+.App .SearchEngine {
+  padding: 20px;
+  
+}
