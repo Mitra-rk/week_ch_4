@@ -1,18 +1,27 @@
+import "./App.css";
+import React,{useState} from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Unit from "./Unit";
+
+
 export default function WeatherCondiotion() {
   return (
     <div className="WeatherCondiotion">
-      <div className="Current">
-        <div class="cityTime">
+      <div className="Current p-3">
+        <div className="cityTime">
           <h1 id="city">New York</h1>
           <p id="day">Last updated at:</p>
           <p id="condition">Mostly Cloudy</p>
         </div>
         <div className="container">
-          <div class="row">
-            <div class="col-7">
-              <strong id="temprature"> 6 °C</strong>
+          <div className="row">
+            <div className="col-2">
+              <img src="" alt="icon"></img>
             </div>
-            <div class="col-5">
+            <div className="col-5">
+              <Unit />
+            </div>
+            <div className="col-5">
               <ul>
                 <li id="humid">Humidity: %</li>
                 <li id="wind">Wind: Km/h</li>
