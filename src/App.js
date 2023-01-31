@@ -1,6 +1,6 @@
 import "./App.css";
 import WeatherCondiotion from "./WeatherCondition";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 export default function App() {
   return (
@@ -17,7 +17,6 @@ export default function App() {
             <WeatherCondiotion />
           </div>
         </div>
-        <a href="#">this is the link</a>
       </div>
     </div>
   );

@@ -10,7 +10,6 @@ export default function WeatherCondiotion() {
         <div className="container">
           <div class="row">
             <div class="col-7">
-              <img id="image" src="" alt="" />
               <strong id="temprature"> 6 °C</strong>
             </div>
             <div class="col-5">
