@@ -1,7 +1,7 @@
-export default function Unit() {
+export default function Unit(props) {
   return (
     <div className="Unit">
-      <span className="Degree m-2">6</span>
+      <span className="Degree m-2">{Math.round(props.temp)}</span>
 
       <a href="#" id="temprature" className="Units ">
         °C
