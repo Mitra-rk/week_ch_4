@@ -6,20 +6,17 @@
   box-shadow: 2px 2px 5px gray;
 }
 
-.App .textBox{
- font-size: 18px;
+.App .textBox {
+  font-size: 18px;
+}
+
+.WeatherCondiotion .Degree {
+  font-size: 48px;
 }
 
 
-
-.Unit .Degree{
-  font-size: 64px;
+.Container img {
 }
-
-.Unit .Units{
-  
-}
-
-.Container img{
-  
+.WeatherCondiotion .Units{
+  text-decoration:none
 }
