@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Unit from "./Unit";
 
@@ -20,10 +20,9 @@ export default function WeatherCondiotion({ data }) {
         <div className="row">
           <div className="col-3">
             <img src={data.imageCondition} alt="icon"></img>
-            
           </div>
           <div className="col-4">
-          <Unit data={data.temp}/>
+            <Unit data={data.temp} />
           </div>
           <div className="col-5">
             <ul>

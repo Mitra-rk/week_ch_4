@@ -17,14 +17,15 @@ export default function Unit(props) {
   return (
     <div className="Unit">
       <span className="Degree m-2">{tem}</span>
-
-      <a href="#" id="temprature" className="Units " onClick={toCel}>
-        °C
-      </a>
-      <a href="#" className="Units" onClick={toFara}>
-        {" "}
-        | F°
-      </a>
+      <ul>
+        <li id="temprature" className="Units " onClick={toCel}>
+          °C
+        </li>
+        <li className="Units" onClick={toFara}>
+          {" "}
+          | F°
+        </li>
+      </ul>
     </div>
   );
 }

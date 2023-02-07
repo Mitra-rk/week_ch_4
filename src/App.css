@@ -15,10 +15,13 @@
 }
 
 .WeatherCondiotion .Units {
-  text-decoration: none;
+  list-style: none;
 }
 
 .App .dev {
-margin: 0 200px;
-
+  margin: 0 200px;
+}
+.Units {
+  display: inline;
+  cursor: pointer;
 }
