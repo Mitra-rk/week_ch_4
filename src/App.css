@@ -14,9 +14,11 @@
   font-size: 48px;
 }
 
-
-.Container img {
+.WeatherCondiotion .Units {
+  text-decoration: none;
 }
-.WeatherCondiotion .Units{
-  text-decoration:none
+
+.App .dev {
+margin: 0 200px;
+
 }

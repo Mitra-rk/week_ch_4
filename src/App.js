@@ -93,6 +93,10 @@ export default function App() {
             <WeatherCondiotion data={weatherData} />
           </div>
         </div>
+        <div className="dev">
+          <span>you can watch code on my github</span>
+          <a href="https://github.com/Mitra-rk/week_ch_4">Source Code</a>
+        </div>
       </div>
     </div>
   );

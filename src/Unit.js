@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 
 export default function Unit(props) {
- let temp=Math.round(props.data);
-  let [tem,setTem]=useState("");
-  alert(props.data);
+  let temp = Math.round(props.data);
+  let [tem, setTem] = useState("");
+
   function toFara() {
-   temp = Math.round(props.data * 1.8 + 32);
-   
-   setTem(temp);
-   
+    temp = Math.round(props.data * 1.8 + 32);
+
+    setTem(temp);
   }
   function toCel() {
     temp = Math.round(props.data);
     setTem(temp);
-   
   }
 
   return (
