@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 
 export default function Unit(props) {
-  let [s,t] = useState("");
-   t(props.data);
+ let temp=Math.round(props.data);
+  let [tem,setTem]=useState("");
+  alert(props.data);
   function toFara() {
-    let fara = Math.round(props.data * 1.8 + 32);
-    t(fara);
+   temp = Math.round(props.data * 1.8 + 32);
+   
+   setTem(temp);
+   
   }
   function toCel() {
-    let cel = Math.round(props.data);
-    t(cel);
+    temp = Math.round(props.data);
+    setTem(temp);
+   
   }
 
   return (
     <div className="Unit">
-      <span className="Degree m-2">{s}</span>
+      <span className="Degree m-2">{tem}</span>
 
       <a href="#" id="temprature" className="Units " onClick={toCel}>
         °C
