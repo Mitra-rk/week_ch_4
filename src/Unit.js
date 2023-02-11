@@ -1,27 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Unit(props) {
   let temp = Math.round(props.data);
-  let [tem, setTem] = useState("");
+  let [temp1, SetTemp] = useState(Math.round(props.data));
+  console.log(props.data);
 
-  function toFara() {
-    temp = Math.round(props.data * 1.8 + 32);
-
-    setTem(temp);
-  }
-  function toCel() {
-    temp = Math.round(props.data);
-    setTem(temp);
-  }
+  useEffect(() => {
+    SetTemp(Math.round(props.data));
+  }, [props.data]);
 
   return (
     <div className="Unit">
-      <span className="Degree m-2">{tem}</span>
+      <span className="Degree m-2">{temp1}</span>
       <ul>
-        <li id="temprature" className="Units " onClick={toCel}>
+        <li
+          id="temprature"
+          className="Units "
+          onClick={() => SetTemp(Math.round(props.data))}
+        >
           °C
         </li>
-        <li className="Units" onClick={toFara}>
+        <li
+          id="fara"
+          className="Units"
+          onClick={() => SetTemp(Math.round(props.data * 1.8 + 32))}
+        >
           {" "}
           | F°
         </li>
