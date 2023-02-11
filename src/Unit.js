@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 export default function Unit(props) {
   let temp = Math.round(props.data);
   let [temp1, SetTemp] = useState(Math.round(props.data));
-  console.log(props.data);
 
   useEffect(() => {
     SetTemp(Math.round(props.data));
