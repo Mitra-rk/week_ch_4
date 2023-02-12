@@ -1,6 +1,6 @@
 .App .Container {
   border: 1px solid rgba(176, 174, 174, 0.578);
-  margin:80px auto;
+  margin: 80px auto;
   max-width: 600px;
   border-radius: 4px;
   box-shadow: 2px 2px 5px gray;
@@ -14,27 +14,44 @@
   font-size: 48px;
 }
 
+.WeatherCondiotion .Container {
+  margin: 5px;
+}
 .WeatherCondiotion .Units {
   list-style: none;
-  display: relative;
-  top:-50;
 }
 
 .App .dev {
   margin: 0 200px;
 }
-.Units {
+.Unit {
+  margin-left: 15px;
+  ;
+}
+.Unit .Units {
   display: inline;
   cursor: pointer;
+  
 }
-.WeatherForecast{
+
+.Unit .m{
+  color: red;
+ 
+  
+}
+.WeatherForecast {
   margin-left: 5px;
 }
 
-.Forecast .max{
-  color:red;
+.Forecast .max {
+  color:green;
 }
 
-.Forecast .min{
-  color:green;
+.Forecast .min {
+  color:tomato;
+}
+.Forecast img{
+  width: 75px;
+  height:75px;
+  
 }

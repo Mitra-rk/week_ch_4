@@ -36,8 +36,8 @@ export default function WeatherForecast(props) {
   }
   if (loaded) {
     return (
-      <div className="WeatherForecast">
-        <div className="row">
+      <div className="WeatherForecast m-3">
+        <div className="row ">
           <Forecast data={send.zero} />
           <Forecast data={send.one} />
           <Forecast data={send.two} />

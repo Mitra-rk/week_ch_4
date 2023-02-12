@@ -13,18 +13,20 @@ export default function WeatherCondiotion({ data }) {
             Last updated at:
             <span className="m-2">{data.time}</span>
           </p>
-          <p id="condition">{data.condition}</p>
+          <p className="text-capitalize" id="condition ">
+            {data.condition}
+          </p>
         </div>
       </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-3">
+      <div className="container m-3">
+        <div className="row ">
+          <div className="col-2">
             <img src={data.imageCondition} alt="icon"></img>
           </div>
-          <div className="col-4">
+          <div className="col-6">
             <Unit data={data.temp} />
           </div>
-          <div className="col-5">
+          <div className="col-4 pt-4">
             <ul>
               <li id="humid">Humidity: {data.humidity}%</li>
               <li id="wind">Wind: {data.wind} Km/h</li>
