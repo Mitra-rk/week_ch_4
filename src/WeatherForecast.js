@@ -9,9 +9,11 @@ export default function WeatherForecast(props) {
   let [send, setSend] = useState({});
   let forecastDay = "";
 
- console.log(props.lat);
+  console.log(props.lat);
 
-  
+  useEffect(() => {
+    search();
+  }, [props.lat]);
 
   function handleResponse(response) {
     forecastDay = response.data.daily;
