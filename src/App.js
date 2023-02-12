@@ -9,6 +9,7 @@ export default function App() {
   let [weatherData, setWeatherDate] = useState({});
   let date1 = "";
   let [city, setCity] = useState("");
+  let latLon = "";
 
   let week = [
     "Sunday",

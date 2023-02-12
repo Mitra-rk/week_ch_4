@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Unit(props) {
-  let temp = Math.round(props.data);
-  let [temp1, SetTemp] = useState(Math.round(props.data));
+  let [temp, SetTemp] = useState(Math.round(props.data));
 
   useEffect(() => {
     SetTemp(Math.round(props.data));
@@ -10,7 +9,7 @@ export default function Unit(props) {
 
   return (
     <div className="Unit">
-      <span className="Degree m-2">{temp1}</span>
+      <span className="Degree m-2">{temp}</span>
       <ul>
         <li
           id="temprature"

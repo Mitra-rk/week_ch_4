@@ -8,6 +8,11 @@ export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [send, setSend] = useState({});
   let forecastDay = "";
+
+ console.log(props.lat);
+
+  
+
   function handleResponse(response) {
     forecastDay = response.data.daily;
     setSend({
@@ -17,7 +22,6 @@ export default function WeatherForecast(props) {
       three: forecastDay[3],
       four: forecastDay[4],
     });
-    console.log(forecastDay[4]);
   }
   function search() {
     if (props.lat && props.lon) {
