@@ -67,7 +67,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="wrapper">
-        <div className="Container">
+        <div className="Container mb-2">
           <div className="SearchEngine p-3">
             <form onSubmit={handleSubmit}>
               <div className="row">
@@ -99,8 +99,10 @@ export default function App() {
           </div>
         </div>
         <div className="dev">
-          <span>you can watch code on my github</span>
-          <a href="https://github.com/Mitra-rk/week_ch_4">Source Code</a>
+          <span>This app was coded by Mitra Enayatollahi, </span>
+          <a href="https://github.com/Mitra-rk/week_ch_4">
+            You can find source code in my Github
+          </a>
         </div>
       </div>
     </div>

@@ -22,11 +22,12 @@
 }
 
 .App .dev {
-  margin: 0 200px;
+ display: flex;
+ justify-content:center;
 }
 .Unit {
   margin-left: 15px;
-  ;
+  
 }
 .Unit .Units {
   display: inline;
